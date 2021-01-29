@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings> 
+  <!-- Parameters used by tests at runtime -->
+  <TestRunParameters>    
+    <!-- Extent report parameters -->
+    <Parameter name="ExtentMode" value="Normal" />
+    <Parameter name="webAppUserName" value="Admin" />
+    <Parameter name="applicationOs" value="Windows" />
+    <Parameter name="hostName" value="SIT" />
+    <Parameter name="executionUsername" value="Nik" />
+
+    <!-- Test setup parameters-->
+    <Parameter name="dataDrivenTest" value="true" />
+    <Parameter name="environment" value="local"/>    <!-- Can be local or browserstack-->
+    <Parameter name="ChromeModeHeadless" value="false" />
+    <Parameter name="ChromeModeIncognito" value="false" />
+    <Parameter name="CloseBrowserAfterEachTest" value="true" />
+   
+      </TestRunParameters>
+  <MSTest>
+    <EnableBaseClassTestMethodsFromOtherAssemblies>true</EnableBaseClassTestMethodsFromOtherAssemblies>
+    <Parallelize>
+      <Workers>1</Workers>
+      <Scope>MethodLevel</Scope>
+    </Parallelize>
+  </MSTest>  
+  <RunConfiguration>
+    <!-- <ResultsDirectory>%temp%\TestResults</ResultsDirectory>-->
+    <!-- <MaxCpuCount>5</MaxCpuCount> -->   
+  </RunConfiguration> 
+</RunSettings> 
