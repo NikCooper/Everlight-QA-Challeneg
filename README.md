@@ -8,11 +8,12 @@ These can be found in here -> Manual Test Cases\Everlight QA Project - Test Case
 
 How to run automation tests:
 - Clone repo
-- Open solution file in Visual Studio and restore neget packages
+- Open solution file in Visual Studio and restore nuget packages
 - To run tests in the IDE you will need to configure the runsettings file from Test->Configure Run Settings and select file in location -> Everlight Automation\Everlight.TestCases\RunSettings.runsettings
 - As this is a data driven framework reading from an excel file you may need the following Access Database Engine package to be installed on your machine. This can be found here - https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255
+- Build solution
 - Run the tests in the test explorer
-- HTML report can be found at location -> Everlight Automation\Everlight.TestCases\bin\Debug\Logs\{{dateTestRan}}
+- HTML report of results can be found at location -> Everlight Automation\Everlight.TestCases\bin\Debug\Logs\{{dateTestRan}}
 
 
 Framework Description:
